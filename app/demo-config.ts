@@ -139,7 +139,7 @@ export const demoConfig: DemoConfig = {
     selectedTools: selectedTools,
     voice: "terrence",
     temperature: 0.4,
-    maxDuration: "60s"
+    maxDuration: "240s"
   }
 };
 

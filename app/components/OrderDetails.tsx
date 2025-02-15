@@ -37,10 +37,7 @@ const OrderDetails: React.FC = () => {
     };
 
     const handleCallEnded = () => {
-      setOrderDetails({
-        items: [],
-        totalAmount: 0
-      });
+      console.log("Ordered:", orderDetails);
     };
 
     window.addEventListener('orderDetailsUpdated', handleOrderUpdate as EventListener);
@@ -63,7 +60,7 @@ const OrderDetails: React.FC = () => {
     <div key={index} className="mb-2 pl-4 border-l-2 border-gray-200">
       <div className="flex justify-between items-center">
         <span className="font-medium">{item.quantity}x {item.name}</span>
-        <span className="text-gray-600">{formatCurrency(item.price * item.quantity)}</span>
+        <span className="text-gray-100">{formatCurrency(item.price * item.quantity)}</span>
       </div>
       {item.specialInstructions && (
         <div className="text-sm text-gray-500 italic mt-1">
@@ -74,8 +71,8 @@ const OrderDetails: React.FC = () => {
   );
 
   return (
-    <div className="mt-10">
-      <h1 className="text-xl font-bold mb-4">Order Details</h1>
+    <div className="mt-10 text-white">
+      <h1 className="text-white text-xl font-bold mb-4">Order Details</h1>
       <div className="shadow-md rounded p-4">
         <div className="mb-4">
           <span className="text-gray-400 font-mono mb-2 block">Items:</span>

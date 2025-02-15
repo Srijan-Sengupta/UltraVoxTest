@@ -205,7 +205,7 @@ export default function Home() {
                         </div>
                         <button
                           type="button"
-                          className="hover:bg-gray-700 px-6 py-2 border-2 w-full mb-4"
+                          className="hover:bg-gray-700 hover:text-white px-6 py-2 border-2 w-full mb-4"
                           onClick={() => handleStartCallButtonClick(modelOverride, showDebugMessages)}
                         >
                           Start Call
