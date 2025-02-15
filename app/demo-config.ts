@@ -138,7 +138,8 @@ export const demoConfig: DemoConfig = {
     languageHint: "en",
     selectedTools: selectedTools,
     voice: "terrence",
-    temperature: 0.4
+    temperature: 0.4,
+    maxDuration: "60s"
   }
 };
 
