@@ -6,15 +6,18 @@ import { OrderDetailsData, OrderItem } from '@/lib/types';
 function prepOrderDetails(orderDetailsData: string): OrderDetailsData {
   try {
     const parsedItems: OrderItem[] = JSON.parse(orderDetailsData);
+    console.log(parsedItems);
     const totalAmount = parsedItems.reduce((sum, item) => {
       return sum + (item.price * item.quantity);
     }, 0);
+    console.log(totalAmount);
 
     // Construct the final order details object with total amount
     const orderDetails: OrderDetailsData = {
       items: parsedItems,
       totalAmount: Number(totalAmount.toFixed(2))
     };
+    console.log(orderDetails);
 
     return orderDetails;
   } catch (error) {
