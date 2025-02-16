@@ -18,7 +18,6 @@ export default function RootLayout({
       <head>
         {/* <!-- Fathom - beautiful, simple website analytics --> */}
         <script src="https://cdn.usefathom.com/script.js" data-site="ONYOCTXK" defer></script>
-        <title>Dr. Donut</title>
         {/* <!-- / Fathom --> */}
       </head>
       <body className="bg-white text-black">
