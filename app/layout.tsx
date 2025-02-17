@@ -4,7 +4,7 @@ import UVLogo from '@/public/UVHorizontal-White.svg';
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Dr. Donut",
+  title: "Panna Labs Voice Agent",
   description: "Demonstration to create a call with an AI agent.",
 };
 
